@@ -41,7 +41,7 @@ def publish_record(record):
 
 if __name__ == "__main__":
 
-    for record in gen_fake_records(max_records=10):
+    for record in gen_fake_records(max_records=1000):
         publish_record(record)
         time.sleep(1)
         console.print("published record", record)
